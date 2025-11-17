@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Coverage - Clickaro Productions</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a classic, solid feel (Copied from the template) */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --color-primary: #FFD700; /* Gold Accent */
+            --color-dark: #121212; /* Deep Black */
+            --color-light: #F5F5F5; /* Ivory/Off-White */
+            --color-text: #E0E0E0; /* Light Gray Text */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-dark);
+            color: var(--color-text);
+        }
+
+        .classic-heading {
+            font-family: 'Playfair Display', serif;
+            color: var(--color-light);
+        }
+
+        .accent-border {
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        .icon-box {
+            background-color: #202020;
+            border-left: 4px solid var(--color-primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .cta-button {
+            background-color: var(--color-primary);
+            color: var(--color-dark);
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #DAA520;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header (Simple Fixed) -->
+    <header class="fixed top-0 left-0 w-full bg-black bg-opacity-90 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <a href="../index.html" class="classic-heading text-3xl font-bold">CLICKARO</a>
+            <nav class="hidden md:block">
+                <a href="../index.html#about" class="text-gray-300 hover:text-white mx-3 text-sm uppercase tracking-wider">About</a>
+                <a href="../index.html#services" class="text-gray-300 hover:text-white mx-3 text-sm uppercase tracking-wider">Services</a>
+                <a href="../index.html#portfolio" class="text-gray-300 hover:text-white mx-3 text-sm uppercase tracking-wider">Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        
+        <!-- Page Title Section -->
+        <section class="bg-cover bg-center h-64 flex items-center justify-center relative" 
+                 style="background-image: url('../assets/html-files-img/event-coverage/camera-bg.jpg');">
+            <div class="absolute inset-0 bg-black opacity-60"></div>
+            <div class="relative z-10 text-center">
+                <h1 class="classic-heading text-5xl font-extrabold mb-2 uppercase tracking-wide">Event Coverage</h1>
+                <p class="text-xl text-gray-300">Seamlessly Documenting Your Special Occasion</p>
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="flex flex-col lg:flex-row gap-12">
+
+                <!-- Sidebar Navigation (Service List) -->
+                <aside class="w-full lg:w-1/4">
+                    <div class="p-6 rounded-lg shadow-xl sticky lg:top-24" style="background-color: #202020;">
+                        <nav class="flex flex-col space-y-2">
+                        
+                            <a href="event-coverage.html" class="px-3 py-2 rounded-lg bg-yellow-900/40 text-white font-semibold">Event Coverage <span class="text-sm text-yellow-300 float-right">Active</span></a>
+                        </nav>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <article class="w-full lg:w-3/4">
+                    <h2 class="classic-heading text-4xl font-bold mb-6">Capturing Every Moment, From Beginning to End</h2>
+                    
+                    <p class="text-lg mb-8 leading-relaxed">
+                        Whether it's a corporate seminar, a grand birthday celebration, or a multi-day wedding, our team provides comprehensive photographic and videographic coverage. We focus on capturing the atmosphere, the key speakers, the candid guest reactions, and the vital details that make your event unique.
+                    </p>
+
+                    <!-- Key Features Grid -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-10">
+                        <div class="icon-box p-6 rounded-lg">
+                            <h5 class="text-xl font-semibold mb-2" style="color: var(--color-primary);">Multi-Day Packages</h5>
+                            <p class="text-sm">Flexible coverage options ranging from short appearances to full-scale, multi-day event documentation.</p>
+                        </div>
+                        <div class="icon-box p-6 rounded-lg">
+                            <h5 class="text-xl font-semibold mb-2" style="color: var(--color-primary);">Dedicated Videography</h5>
+                            <p class="text-sm">Separate video team available to film speaker presentations, interviews, and compile a polished event highlight reel.</p>
+                        </div>
+                        <div class="icon-box p-6 rounded-lg">
+                            <h5 class="text-xl font-semibold mb-2" style="color: var(--color-primary);">Low-Light Expertise</h5>
+                            <p class="text-sm">We excel at shooting in challenging indoor or low-light venues, ensuring sharp, vibrant photos without disruptive flash.</p>
+                        </div>
+                        <div class="icon-box p-6 rounded-lg">
+                            <h5 class="text-xl font-semibold mb-2" style="color: var(--color-primary);">Fast Turnaround</h5>
+                            <p class="text-sm">Quick delivery of select highlight photos, perfect for immediate use on social media or press releases.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Image Gallery Placeholder -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+                        <img src="https://placehold.co/400x400/444/FFF?text=Event+Scene+1" alt="Event Coverage Image 1" class="w-full h-auto object-cover rounded-lg shadow-xl hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/400x400/444/FFF?text=Stage+View" alt="Event Coverage Image 2" class="w-full h-auto object-cover rounded-lg shadow-xl hover:shadow-2xl transition duration-300">
+                        <img src="https://placehold.co/400x400/444/FFF?text=Guest+Reaction" alt="Event Coverage Image 3" class="w-full h-auto object-cover rounded-lg shadow-xl hover:shadow-2xl transition duration-300">
+                    </div>
+
+                    <h3 class="classic-heading text-3xl font-bold mt-10 mb-4">Pricing & Booking</h3>
+                    <p class="text-lg mb-6">
+                        Ensure your event is documented flawlessly. Event coverage is booked hourly or via custom packages. Basic photo coverage starts at **Rs 12,000 per hour** (minimum 3 hours).
+                    </p>
+
+                    <a href="../index.html#contact" class="inline-block cta-button px-8 py-3 rounded-full font-bold text-lg hover:shadow-xl transition duration-300 mt-4">
+                        Inquire About Event Availability
+                    </a>
+
+                </article>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            &copy; 2025 Clickaro Productions. All rights reserved. | <span class="text-yellow-600">Designed for timeless stories.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
